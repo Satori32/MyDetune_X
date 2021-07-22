@@ -1,9 +1,9 @@
 #include <iostream>
 #include <cstdint>
 
-template<class T, class U>
-U Detune(const T& N, const U& Max, const U& Step) {
-	U A = Max / Step;
+template<class T>
+T Detune(const T& N, const T& Max, const T Step) {
+	T A = Max / Step;
 	T B = N / A;
 
 	return B*Step;
