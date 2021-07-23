@@ -3,10 +3,10 @@
 
 template<class T>
 T Detune(const T& N, const T& Max, const T Step) {//separate region.
-	T A = Max / Step;
-	T B = N / A;
+	T A = Max / Step;//make one region 
+	T B = N / A;//make step number.
 
-	return B*Step;
+	return B*A;//(step number)*region.
 }
 
 template<class T>
